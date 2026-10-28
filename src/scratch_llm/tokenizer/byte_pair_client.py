@@ -18,7 +18,7 @@ class BytePairTokenizer:
         self._tokenizer = tiktoken.get_encoding("gpt2")
 
     def encode(self, text: str) -> List[int]:
-        return self._tokenizer.encode(text)
+        return self._tokenizer.encode(text, allowed_special={"<|endoftext|>"})
 
     def decode(self, ids: List[str]) -> str:
         return self._tokenizer.decode(ids)
