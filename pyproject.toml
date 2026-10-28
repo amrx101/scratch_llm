@@ -7,7 +7,9 @@ authors = [
     { name = "amit", email = "amrx101@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "tiktoken>=0.14.0",
+]
 
 [project.scripts]
 scratch-llm = "scratch_llm:main"
