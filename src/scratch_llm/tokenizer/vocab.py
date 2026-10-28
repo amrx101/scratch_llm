@@ -8,7 +8,6 @@ Text File -> Consists of Tokens.
 Vocab is an enumeration of unique of tokens.
 """
 import re
-
 from typing import Dict
 
 class Vocab:
